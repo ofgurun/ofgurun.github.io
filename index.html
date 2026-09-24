@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gurun Studio</title>
+<meta name="description" content="Gurun Studio – mobile puzzle games: Ring Jam: Aqua Sort and Puzzle Blast: Block Master.">
+<style>
+:root {
+  --ink: #0f2447; --muted: #4a5d7e; --line: #d6e3f5;
+  --bg: #f4f8fd; --card: #ffffff; --accent: #1f6fe0;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --ink: #e6eefb; --muted: #9fb2d0; --line: #253a5c; --bg: #0c1a33; --card: #13264a; --accent: #6aa8ff; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; padding: 0 16px; background: var(--bg); color: var(--ink);
+  font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+main { max-width: 760px; margin: 0 auto; padding: 32px 0 64px; }
+header { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
+.brand { font-weight: 800; font-size: 22px; }
+nav a { color: var(--accent); text-decoration: none; font-size: 15px; }
+h1 { font-size: 30px; line-height: 1.2; margin: 28px 0 6px; }
+.lead { color: var(--muted); margin: 0 0 8px; }
+.game { display: flex; gap: 20px; align-items: flex-start; background: var(--card);
+  border: 1px solid var(--line); border-radius: 16px; padding: 22px; margin: 20px 0; }
+.game img { width: 96px; height: 96px; border-radius: 22px; flex: none; }
+.game h2 { margin: 0 0 4px; font-size: 21px; }
+.game p { margin: 0 0 12px; }
+.links { display: flex; flex-wrap: wrap; gap: 8px 16px; font-size: 15px; }
+.btn { display: inline-block; background: var(--accent); color: #fff; text-decoration: none;
+  font-weight: 600; padding: 8px 14px; border-radius: 10px; font-size: 15px; }
+.links a:not(.btn) { color: var(--accent); align-self: center; }
+.muted { color: var(--muted); font-size: 14px; }
+section.lang { margin-top: 48px; padding-top: 8px; border-top: 1px solid var(--line); }
+footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--line); }
+a { color: var(--accent); }
+@media (max-width: 480px) {
+  .game { flex-direction: column; gap: 14px; }
+  .game img { width: 80px; height: 80px; border-radius: 18px; }
+}
+</style>
+</head>
+<body>
+<main>
+<header>
+  <span class="brand">Gurun Studio</span>
+  <nav><a href="#tr">Türkçe</a></nav>
+</header>
+
+<h1>Relaxing puzzle games</h1>
+<p class="lead">Independent mobile games made in Türkiye.</p>
+
+<article class="game" id="ring-jam">
+  <img src="img/ring-jam.png" alt="Ring Jam: Aqua Sort icon">
+  <div>
+    <h2>Ring Jam: Aqua Sort</h2>
+    <p>A relaxing underwater puzzle: tap the rings, let the water carry them into their matching boxes, and decorate your own aquarium as you progress.</p>
+    <div class="links">
+      <a class="btn" href="https://apps.apple.com/app/ring-jam-aqua-sort/id6812517327">App Store</a>
+      <a href="https://ring-jam-58fcd.web.app/privacy">Privacy Policy</a>
+      <a href="https://ring-jam-58fcd.web.app/terms">Terms of Use</a>
+      <a href="https://ring-jam-58fcd.web.app/delete-account">Delete data</a>
+    </div>
+  </div>
+</article>
+
+<article class="game" id="puzzle-blast">
+  <img src="img/puzzle-blast.png" alt="Puzzle Blast: Block Master icon">
+  <div>
+    <h2>Puzzle Blast: Block Master</h2>
+    <p>A classic block puzzle: place the blocks on the board, clear full rows and columns, and chase your best score.</p>
+    <div class="links">
+      <a class="btn" href="https://play.google.com/store/apps/details?id=com.omerfarukgurun.puzzleblast">Google Play</a>
+    </div>
+  </div>
+</article>
+
+<p>Support: <a href="mailto:1omerfarukgurun@gmail.com">1omerfarukgurun@gmail.com</a></p>
+
+<section class="lang" id="tr" lang="tr">
+  <h1>Rahatlatıcı bulmaca oyunları</h1>
+  <p class="lead">Türkiye'de geliştirilen bağımsız mobil oyunlar.</p>
+
+  <article class="game">
+    <img src="img/ring-jam.png" alt="Ring Jam: Aqua Sort simgesi">
+    <div>
+      <h2>Ring Jam: Aqua Sort</h2>
+      <p>Rahatlatıcı bir su altı bulmacası: halkalara dokun, su onları eşleşen kutulara taşısın; ilerledikçe kendi akvaryumunu süsle.</p>
+      <div class="links">
+        <a class="btn" href="https://apps.apple.com/tr/app/ring-jam-aqua-sort/id6812517327">App Store</a>
+        <a href="https://ring-jam-58fcd.web.app/tr/privacy">Gizlilik Politikası</a>
+        <a href="https://ring-jam-58fcd.web.app/tr/terms">Kullanım Koşulları</a>
+        <a href="https://ring-jam-58fcd.web.app/tr/delete-account">Verileri sil</a>
+      </div>
+    </div>
+  </article>
+
+  <article class="game">
+    <img src="img/puzzle-blast.png" alt="Puzzle Blast: Block Master simgesi">
+    <div>
+      <h2>Puzzle Blast: Block Master</h2>
+      <p>Klasik blok bulmacası: blokları tahtaya yerleştir, dolan satır ve sütunları temizle, en yüksek skorunu kovala.</p>
+      <div class="links">
+        <a class="btn" href="https://play.google.com/store/apps/details?id=com.omerfarukgurun.puzzleblast&amp;hl=tr">Google Play</a>
+      </div>
+    </div>
+  </article>
+
+  <p>Destek: <a href="mailto:1omerfarukgurun@gmail.com">1omerfarukgurun@gmail.com</a></p>
+</section>
+
+<footer class="muted">© 2026 Gurun Studio</footer>
+</main>
+</body>
+</html>
