@@ -14,7 +14,7 @@
 </header>
 
 <h1>Gizlilik Politikası ve KVKK Aydınlatma Metni</h1>
-<p class="muted">Yürürlük tarihi: 10 Ekim 2026 · Sürüm 2</p>
+<p class="muted">Yürürlük tarihi: 10 Ekim 2026 · Sürüm 3</p>
 
 <p>Bu metin, <strong>Sand Fit: Block Puzzle</strong> mobil oyununun (“Oyun”) hangi bilgileri, neden topladığını, kimlerle paylaştığını ve sahip olduğunuz hakları açıklar. Oyunun yayıncısı ve veri sorumlusu <strong>Gurun Studio</strong>’dur (Ömer Faruk Gürün, Türkiye); metinde “biz” olarak geçer. İletişim: <a href="mailto:1omerfarukgurun@gmail.com">1omerfarukgurun@gmail.com</a>.</p>
 
@@ -32,14 +32,14 @@
 <table>
   <tr><th>Bilgi</th><th>Amaç</th><th>Hizmet</th></tr>
   <tr><td><strong>Oyun ve cihaz olayları</strong>: başlatılan, kazanılan, kaybedilen veya yarıda bırakılan bölümler, kullanılan güçlendiriciler, kazanılan ve harcanan coinler, izlenen reklamlar, uygulama içi satın alma olayları, uygulama örneği kimliği, cihaz modeli, işletim sistemi sürümü, dil, ülke (IP adresinden türetilir).</td><td>Oyunun nasıl oynandığını anlamak, zorluğu dengelemek, sorunları gidermek.</td><td>Google Analytics for Firebase</td></tr>
-  <tr><td><strong>Bulut kaydı</strong>: Oyunun oluşturduğu rastgele anonim oyuncu kimliği ve onun altında bölümünüz, coinleriniz, güçlendiricileriniz, sahip olduğunuz ürünler, alınan ödüller, Oyun sürümü ve son kayıt zamanı.</td><td>Oyunu yeniden kurduğunuzda ilerlemenizi ve satın aldığınız coinleri korumak.</td><td>Firebase Authentication (anonim), Cloud Firestore</td></tr>
+  <tr><td><strong>Bulut kaydı</strong>: Oyunun oluşturduğu rastgele anonim oyuncu kimliği ve onun altında bölümünüz, coinleriniz, güçlendiricileriniz, sahip olduğunuz ürünler, alınan ödüller, Oyun sürümü ve son kayıt zamanı. Android’de Google Play Games kullanıyorsanız Play Games oyuncu kimliğiniz ve görünen adınız bu kimliğe bağlanır.</td><td>Oyunu yeniden kurduğunuzda veya telefon değiştirdiğinizde ilerlemenizi ve satın aldığınız coinleri korumak.</td><td>Firebase Authentication, Cloud Firestore, Google Play Games Hizmetleri (Android)</td></tr>
   <tr><td><strong>Çökme ve hata raporları</strong>: hata ayrıntıları, çökme anındaki cihaz durumu, kurulum kimliği.</td><td>Çökmeleri bulmak ve düzeltmek.</td><td>Firebase Crashlytics</td></tr>
   <tr><td><strong>Reklam verileri</strong>: reklam kimliği, IP adresi, cihaz bilgileri, reklam etkileşimleri ve gerekli yerlerde onay tercihiniz.</td><td>Reklam göstermek, ölçmek ve reklam sahtekârlığını önlemek; kişiselleştirilmiş reklam yalnızca izin verdiyseniz.</td><td>Google AdMob, Google User Messaging Platform</td></tr>
   <tr><td><strong>Satın almalar</strong>: ürün, sipariş/işlem numarası ve satın alma makbuzu.</td><td>Satın aldığınızı teslim etmek, tek seferlik ürünleri geri yüklemek, makbuzu doğrulamak.</td><td>Google Play Faturalandırma, Apple App Store</td></tr>
   <tr><td><strong>Destek mesajları</strong>: e-posta adresiniz ve bize yazdıklarınız.</td><td>Talebinizi yanıtlamak.</td><td>E-posta</td></tr>
 </table>
 </div>
-<p>Ses, titreşim ve dil gibi ayarlar yalnızca cihazınızda saklanır. Bulut kaydında ad, e-posta adresi veya başka bir iletişim bilgisi yoktur; yalnızca anonim oyuncu kimliğinin sahibi olan Oyun kurulumu tarafından okunup yazılabilir. Android’de Oyunu kaldırmak bu kimliği de cihazdan siler; yeniden kurulumda yeni bir kayıt başlar.</p>
+<p>Ses, titreşim ve dil gibi ayarlar yalnızca cihazınızda saklanır. Bulut kaydında e-posta adresi veya başka bir iletişim bilgisi yoktur; yalnızca oyuncu kimliğinin sahibi olan Oyun kurulumu tarafından okunup yazılabilir. Android’de Oyun, Google Play Games kullanıyorsanız ona sessizce giriş yapar; böylece yeniden kurulumda aynı kayıt bulunur. Play Games kullanmıyorsanız Oyunu kaldırmak kimliği de cihazdan siler ve yeniden kurulumda yeni bir kayıt başlar.</p>
 
 <h2>3. Reklamlar ve onay</h2>
 <p>Avrupa Ekonomik Alanı, Birleşik Krallık veya İsviçre’deyseniz Oyun, kişiselleştirilmiş reklam göstermeden önce Google’ın onay penceresiyle izninizi ister; bu pencere Google’ın reklam iş ortaklarını da listeler. Onay vermezseniz kişiselleştirilmemiş reklamlar görebilirsiniz.</p>
@@ -59,7 +59,7 @@
 <h2>5. Aktarım ve paylaşım</h2>
 <p>Kişisel verilerinizi satmayız. Verileriniz yalnızca Oyunu bizim adımıza çalıştıran hizmet sağlayıcılarla, her birinin kendi veri işleme koşulları çerçevesinde paylaşılır. Bu koşullar, verilerin en az bu metinde anlatıldığı ölçüde korunmasını gerektirir:</p>
 <ul>
-  <li><strong>Google LLC</strong> ve bağlı şirketleri: Firebase (Authentication, Cloud Firestore, Analytics, Crashlytics), AdMob ve User Messaging Platform, Google Play Faturalandırma.</li>
+  <li><strong>Google LLC</strong> ve bağlı şirketleri: Firebase (Authentication, Cloud Firestore, Analytics, Crashlytics, Remote Config), Google Play Games Hizmetleri, AdMob ve User Messaging Platform, Google Play Faturalandırma.</li>
   <li><strong>Apple Inc.</strong> (yalnızca iOS): App Store satın almaları.</li>
 </ul>
 <p>Ayrıntılı bilgi:</p>
