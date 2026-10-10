@@ -14,15 +14,15 @@
 </header>
 
 <h1>Privacy Policy</h1>
-<p class="muted">Effective date: 10 October 2026 · Version 1</p>
+<p class="muted">Effective date: 10 October 2026 · Version 2</p>
 
 <p>This policy explains what information the mobile game <strong>Sand Fit: Block Puzzle</strong> (the “Game”) collects, why, who it is shared with, and the choices you have. The Game is published by <strong>Gurun Studio</strong> (Ömer Faruk Gürün, Türkiye), referred to as “we”. Contact: <a href="mailto:1omerfarukgurun@gmail.com">1omerfarukgurun@gmail.com</a>.</p>
 
 <h2>1. Summary</h2>
 <ul>
-  <li>The Game has no account and no sign-in. We do not ask for your name, email address, phone number, contacts, photos or precise location.</li>
-  <li>Your progress, coins, boosters and settings are stored only on your device. We do not keep a copy on our servers.</li>
-  <li>The Game shows ads through Google AdMob and uses Google Firebase for analytics and crash reports.</li>
+  <li>The Game has no sign-in screen. We do not ask for your name, email address, phone number, contacts, photos or precise location.</li>
+  <li>Your progress, coins, boosters and purchases are stored on your device and backed up to a cloud save under a random, anonymous player ID, so they can come back if you reinstall the Game. Settings stay only on your device.</li>
+  <li>The Game shows ads through Google AdMob and uses Google Firebase for the cloud save, analytics and crash reports.</li>
   <li>Purchases are processed by Google Play or the Apple App Store. We never see your payment details.</li>
 </ul>
 
@@ -32,13 +32,14 @@
 <table>
   <tr><th>Information</th><th>Why</th><th>Service</th></tr>
   <tr><td><strong>Gameplay and device events</strong>: levels started, won, lost or left, boosters used, coins earned and spent, ads watched, in-app purchase events, app instance ID, device model, OS version, language, country (derived from IP address).</td><td>Understand how the Game is played, balance difficulty, fix problems.</td><td>Google Analytics for Firebase</td></tr>
+  <tr><td><strong>Cloud save</strong>: a random anonymous player ID created by the Game, and under it your level, coins, boosters, owned items, claimed rewards, Game version and the time of the last save.</td><td>Keep your progress and purchased coins if you reinstall the Game.</td><td>Firebase Authentication (anonymous), Cloud Firestore</td></tr>
   <tr><td><strong>Crash and error reports</strong>: stack traces, device state at the time of the crash, installation identifier.</td><td>Find and fix crashes.</td><td>Firebase Crashlytics</td></tr>
   <tr><td><strong>Advertising data</strong>: advertising ID, IP address, device information, ad interactions, and your consent choice where required.</td><td>Show ads, measure them, prevent ad fraud; personalised ads only where you allowed them.</td><td>Google AdMob, Google User Messaging Platform</td></tr>
   <tr><td><strong>Purchases</strong>: product, order/transaction ID and purchase receipt.</td><td>Deliver what you bought, restore one-time purchases, verify receipts.</td><td>Google Play Billing, Apple App Store</td></tr>
   <tr><td><strong>Support messages</strong>: your email address and what you write to us.</td><td>Answer your request.</td><td>Email</td></tr>
 </table>
 </div>
-<p>Game progress (level, coins, boosters, owned items) and settings such as sound, vibration and language are stored only on your device.</p>
+<p>Settings such as sound, vibration and language are stored only on your device. The cloud save holds no name, email address or other contact detail; it can be read and written only by the Game installation that owns the anonymous player ID. On Android, removing the Game also removes that ID from the device, so a reinstall starts a new save.</p>
 
 <h2>3. Advertising and consent</h2>
 <p>If you are in the European Economic Area, the United Kingdom or Switzerland, the Game asks for your consent before personalised ads are shown, using Google’s consent form, which also lists Google’s advertising partners. If you do not consent, you may still see non-personalised ads.</p>
@@ -58,7 +59,7 @@
 <h2>5. Who we share data with</h2>
 <p>We do not sell your personal data. We share it only with the service providers that run the Game for us, each under its own data processing terms, which require them to protect personal data at least as well as described in this policy:</p>
 <ul>
-  <li><strong>Google LLC</strong> and its affiliates: Firebase (Analytics, Crashlytics), AdMob and the User Messaging Platform, and Google Play Billing.</li>
+  <li><strong>Google LLC</strong> and its affiliates: Firebase (Authentication, Cloud Firestore, Analytics, Crashlytics), AdMob and the User Messaging Platform, and Google Play Billing.</li>
   <li><strong>Apple Inc.</strong> (iOS only): App Store purchases.</li>
 </ul>
 <p>More information:</p>
@@ -76,6 +77,7 @@
 <h2>7. Retention</h2>
 <ul>
   <li>Progress and settings stay on your device until you uninstall the Game or clear its data.</li>
+  <li>The cloud save is kept until you ask us to delete it, or until it has not been used for 24 months.</li>
   <li>Analytics data is kept according to the retention setting of our Google Analytics property (at most 14 months for user-level data).</li>
   <li>Crash reports are kept for up to 90 days.</li>
   <li>Support emails are kept as long as needed to handle your request.</li>
@@ -84,7 +86,7 @@
 
 <h2>8. Your rights and choices</h2>
 <ul>
-  <li><strong>Delete your data:</strong> uninstalling the Game (or clearing its data in your device settings) deletes your progress and settings, because they exist only on your device. This cannot be undone.</li>
+  <li><strong>Delete your data:</strong> uninstalling the Game (or clearing its data in your device settings) deletes the progress and settings on your device. To also delete the cloud save, email us the Player ID shown at the bottom of the Game’s settings window; we delete it within 30 days. Neither can be undone.</li>
   <li><strong>Other requests:</strong> email us. Depending on where you live, you have the right to:
     <ul>
       <li>know whether we process your data, and get access to it and a copy of it;</li>
@@ -96,7 +98,7 @@
       <li>object to a result against you that arises only from automated processing;</li>
       <li>claim compensation for damage caused by unlawful processing.</li>
     </ul>
-    These rights include your rights under Article 11 of the KVKK. We answer free of charge within 30 days. Because the Game has no account, we may need details such as your device model and the date you installed the Game to find the data a request refers to.</li>
+    These rights include your rights under Article 11 of the KVKK. We answer free of charge within 30 days. Because the Game has no named account, we need your Player ID (for the cloud save) or details such as your device model and the date you installed the Game to find the data a request refers to.</li>
   <li><strong>Ads:</strong> on iOS turn tracking off in iOS Settings; on Android reset or delete your advertising ID.</li>
   <li><strong>US state privacy rights:</strong> we do not sell personal information for money. Personalised advertising may count as “sharing” under some US state laws; you can opt out by turning off tracking (iOS) or deleting your advertising ID (Android), or by emailing us.</li>
   <li><strong>Complaints:</strong> you can complain to your local data protection authority (in Türkiye: the Personal Data Protection Authority, KVKK; in the EU: the authority of your country).</li>
