@@ -28,13 +28,14 @@ h1 { font-size: 30px; line-height: 1.2; margin: 28px 0 6px; }
 .game h2 { margin: 0 0 4px; font-size: 21px; }
 .game p { margin: 0 0 12px; }
 .links { display: flex; flex-wrap: wrap; gap: 8px 16px; font-size: 15px; }
-.btn { display: inline-block; background: var(--accent); color: #fff; text-decoration: none;
+.btn { display: inline-block; background: #1f6fe0; color: #fff; text-decoration: none;
   font-weight: 600; padding: 8px 14px; border-radius: 10px; font-size: 15px; }
 .links a:not(.btn) { color: var(--accent); align-self: center; }
 .muted { color: var(--muted); font-size: 14px; }
 section.lang { margin-top: 48px; padding-top: 8px; border-top: 1px solid var(--line); }
 footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--line); }
-a { color: var(--accent); }
+a { color: var(--accent); overflow-wrap: anywhere; }
+.game > div { min-width: 0; }
 @media (max-width: 480px) {
   .game { flex-direction: column; gap: 14px; }
   .game img { width: 80px; height: 80px; border-radius: 18px; }
@@ -57,9 +58,11 @@ a { color: var(--accent); }
     <h2>Sand Fit: Block Puzzle</h2>
     <p>A sand puzzle on the beach: drag the sand blocks over the mould, watch them pour in and fill it exactly, with no gaps and no overflow.</p>
     <div class="links">
-      <span class="muted">Coming soon</span>
+      <a class="btn" href="https://apps.apple.com/app/id6820926375" aria-label="Download Sand Fit on the App Store">App Store</a>
+      <a class="btn" href="https://play.google.com/store/apps/details?id=com.omerfarukgurun.sandfit" aria-label="Get Sand Fit on Google Play">Google Play</a>
       <a href="sandfit/privacy/">Privacy Policy</a>
       <a href="sandfit/terms/">Terms of Use</a>
+      <a href="sandfit/privacy/#delete">Delete data</a>
     </div>
   </div>
 </article>
@@ -103,9 +106,11 @@ a { color: var(--accent); }
       <h2>Sand Fit: Block Puzzle</h2>
       <p>Plajda bir kum bulmacası: kum bloklarını kalıbın üstüne sürükle, akarak içine dolmalarını izle; boşluk bırakmadan ve taşırmadan kalıbı tam doldur.</p>
       <div class="links">
-        <span class="muted">Çok yakında</span>
+        <a class="btn" href="https://apps.apple.com/tr/app/id6820926375" aria-label="Sand Fit'i App Store'dan indir">App Store</a>
+        <a class="btn" href="https://play.google.com/store/apps/details?id=com.omerfarukgurun.sandfit&amp;hl=tr" aria-label="Sand Fit'i Google Play'den indir">Google Play</a>
         <a href="sandfit/tr/privacy/">Gizlilik Politikası</a>
         <a href="sandfit/tr/terms/">Kullanım Koşulları</a>
+        <a href="sandfit/tr/privacy/#delete">Verileri sil</a>
       </div>
     </div>
   </article>

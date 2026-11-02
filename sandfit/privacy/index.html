@@ -14,56 +14,63 @@
 </header>
 
 <h1>Privacy Policy</h1>
-<p class="muted">Effective date: 31 October 2026 · Version 4</p>
+<p class="muted">Effective date: 2 November 2026 · Version 5</p>
 
-<p>This policy explains what information the mobile game <strong>Sand Fit: Block Puzzle</strong> (the “Game”) collects, why, who it is shared with, and the choices you have. The Game is published by <strong>Gurun Studio</strong> (Ömer Faruk Gürün, Türkiye), referred to as “we”. Contact: <a href="mailto:1omerfarukgurun@gmail.com">1omerfarukgurun@gmail.com</a>.</p>
+<p>This policy explains what information the mobile game <strong>Sand Fit: Block Puzzle</strong> (the “Game”) collects, why, who it is shared with, and the choices you have. The Game is published by <strong>Ömer Faruk Gürün</strong>, using the name <strong>Gurun Studio</strong> (Türkiye), referred to as “we”. Contact: <a href="mailto:1omerfarukgurun@gmail.com">1omerfarukgurun@gmail.com</a>.</p>
 
 <h2>1. Summary</h2>
 <ul>
   <li>The Game has no sign-in screen. We do not ask for your name, email address, phone number, contacts, photos or precise location.</li>
-  <li>Your progress, coins, boosters and purchases are stored on your device and backed up to a cloud save under a random, anonymous player ID, so they can come back if you reinstall the Game. Settings stay only on your device.</li>
+  <li>Your progress, coins, boosters and purchases are stored on your device and backed up to a cloud save under a random, pseudonymous player ID. Restoration depends on the platform and available credentials and is not guaranteed. Settings stay on your device.</li>
   <li>The Game shows ads through Google AdMob and uses Google Firebase for the cloud save, analytics and crash reports.</li>
-  <li>Outside the EEA, the UK and Switzerland, the Game tells Meta (Facebook) when it is installed and opened, so we can measure our own ads on Instagram and Facebook.</li>
+  <li>The Game uses the Meta SDK to measure our Instagram and Facebook ads. Its activation is controlled by the Google consent status. Older releases enable automatic app-event logging, which can include purchase events in addition to installs and launches.</li>
   <li>Purchases are processed by Google Play or the Apple App Store. We never see your payment details.</li>
 </ul>
 
 <h2>2. Information we collect</h2>
-<p>Everything below stays inside the Game and the services listed; nothing is sold.</p>
+<p>The Game and its SDKs process the following categories. A random identifier can still be personal data: it can be associated with an installation, purchases or saved progress. We do not receive your full payment-card details.</p>
 <div class="table-wrap">
 <table>
   <tr><th>Information</th><th>Why</th><th>Service</th></tr>
   <tr><td><strong>Gameplay and device events</strong>: levels started, won, lost or left, boosters used, coins earned and spent, ads watched, in-app purchase events, app instance ID, device model, OS version, language, country (derived from IP address).</td><td>Understand how the Game is played, balance difficulty, fix problems.</td><td>Google Analytics for Firebase</td></tr>
-  <tr><td><strong>Cloud save</strong>: a random anonymous player ID created by the Game, and under it your level, coins, boosters, owned items, claimed rewards, Game version and the time of the last save. On Android, if you use Google Play Games, your Play Games player ID and display name are linked to this ID.</td><td>Keep your progress and purchased coins if you reinstall the Game or change your phone.</td><td>Firebase Authentication, Cloud Firestore, Google Play Games Services (Android)</td></tr>
+  <tr><td><strong>Cloud save</strong>: a random pseudonymous player ID created by the Game, and under it your level, coins, boosters, owned items, claimed rewards, Game version and the time of the last save. On Android, if you use Google Play Games, your Play Games player ID and display name are linked to this ID.</td><td>Keep your progress and purchased coins if you reinstall the Game or change your phone.</td><td>Firebase Authentication, Cloud Firestore, Google Play Games Services (Android)</td></tr>
   <tr><td><strong>Crash and error reports</strong>: stack traces, device state at the time of the crash, installation identifier.</td><td>Find and fix crashes.</td><td>Firebase Crashlytics</td></tr>
   <tr><td><strong>Advertising data</strong>: advertising ID, IP address, device information, ad interactions, and your consent choice where required.</td><td>Show ads, measure them, prevent ad fraud; personalised ads only where you allowed them.</td><td>Google AdMob, Google User Messaging Platform</td></tr>
-  <tr><td><strong>App install and open events</strong>: that the Game was installed or opened, app version, device model, OS version, advertising ID (on iOS only if you allowed tracking) and IP address. Not collected in the EEA, the UK or Switzerland.</td><td>Measure how many players our Instagram and Facebook ads bring.</td><td>Meta Platforms (Meta SDK)</td></tr>
-  <tr><td><strong>Purchases</strong>: product, order/transaction ID and purchase receipt.</td><td>Deliver what you bought, restore one-time purchases, verify receipts.</td><td>Google Play Billing, Apple App Store</td></tr>
+  <tr><td><strong>Meta app events</strong>: installation/activation and app launches, app and SDK version, device and operating-system information, SDK identifiers, IP address and advertising identifier where available and permitted. Older releases with automatic event logging enabled can also send purchase-related events. Our code requests activation when Google UMP reports that a privacy-options entry point is not required; that status is not a complete legal assessment of your region or consent.</td><td>Measure how many players our Instagram and Facebook ads bring.</td><td>Meta Platforms (Meta SDK)</td></tr>
+  <tr><td><strong>Purchases</strong>: product, order/transaction ID and purchase receipt.</td><td>Deliver and restore purchases, prevent duplicate delivery, and provide purchase processing and transaction reporting. The Game has no separate developer-operated receipt-validation server.</td><td>Google Play Billing, Apple App Store, Unity In-App Purchasing</td></tr>
+  <tr><td><strong>Unity purchase SDK data</strong>: product, price/currency, transaction identifiers, purchase attempts/results, receipts or store purchase payloads, installation/session and vendor identifiers, app/engine/SDK version, device model, language/region and operating system. Available fields depend on the platform, SDK configuration and permissions.</td><td>Operate purchasing, transaction reconciliation, diagnostics and Unity's SDK reporting under its applicable terms.</td><td>Unity Technologies (Unity IAP 5.4.3)</td></tr>
+  <tr><td><strong>Remote settings</strong>: Firebase installation identifier and technical request information such as IP address and app version.</td><td>Deliver version-appropriate game settings.</td><td>Firebase Remote Config / Firebase Installations</td></tr>
   <tr><td><strong>Support messages</strong>: your email address and what you write to us.</td><td>Answer your request.</td><td>Email</td></tr>
 </table>
 </div>
-<p>Settings such as sound, vibration and language are stored only on your device. The cloud save holds no email address or other contact detail; it can be read and written only by the Game installation that owns the player ID. On Android the Game signs in to Google Play Games silently when you use it, so the same save is found again after a reinstall; if you do not use Play Games, removing the Game also removes the ID from the device and a reinstall starts a new save.</p>
+<p>Settings such as sound, vibration and language are stored only on your device. The cloud save holds no email address or other contact detail; client access is restricted by Firestore rules to the authenticated owner of the player ID. Authorised service administrators can also access data for support, security and deletion requests. On Android the Game signs in to Google Play Games silently when you use it, so the same save is found again after a reinstall; if you do not use Play Games, removing the Game also removes the ID from the device and a reinstall starts a new save.</p>
 
-<h2>3. Advertising and consent</h2>
-<p>If you are in the European Economic Area, the United Kingdom or Switzerland, the Game asks for your consent before personalised ads are shown, using Google’s consent form, which also lists Google’s advertising partners. If you do not consent, you may still see non-personalised ads.</p>
+<h2>3. Advertising, notifications and choices</h2>
+<p>If you are in the European Economic Area, the United Kingdom or Switzerland, the Game asks for your consent before personalised ads are shown, using Google’s consent form, which also lists Google’s advertising partners. If you do not consent, ads may be non-personalised, limited, or unavailable, depending on the consent state and Google's requirements. In versions that display “Ad privacy choices” in Settings, that button reopens Google's privacy-options form when required. Earlier versions do not include that button; device-level controls and the contact address remain available.</p>
 <p><strong>iOS:</strong> the Game asks for permission to track (App Tracking Transparency). Your device’s advertising identifier (IDFA) is used by AdMob and Meta only if you allow it. You can change this at any time in <strong>iOS Settings → Privacy &amp; Security → Tracking</strong>.</p>
 <p><strong>Android:</strong> you can reset or delete your advertising ID in your device settings (Settings → Privacy → Ads, or Google → Ads).</p>
 <p>Personalised ads involve automated profiling by Google based on the advertising data described above. We do not make any decisions about you that have legal or similarly significant effects. Buying <strong>Remove Ads</strong> removes the ads shown between levels; ads you choose to watch for rewards remain available.</p>
 
+<p><strong>Local reminders:</strong> with your device permission where required, the Game schedules notifications on the device. It stores recent play times, last-session time and permission-prompt history locally. It does not use Firebase Cloud Messaging or a remote push-token service. Notification permission/opening events, reward-calendar use, rescue results and thermal-state events may be included in Firebase Analytics. You can disable notifications in your device settings.</p>
+<p><strong>Reading is not consent:</strong> accepting the Terms or acknowledging this notice does not itself grant advertising, analytics or tracking consent. ATT concerns cross-app tracking; Google UMP concerns supported advertising privacy messages. Neither is a blanket consent for every SDK. Released versions currently have no separate in-game Firebase Analytics or Crashlytics opt-out; contact us about your rights and choices.</p>
+
 <h2>4. Legal bases</h2>
-<p>Where the GDPR or Türkiye’s Personal Data Protection Law No. 6698 (KVKK) applies, the data controller is Gurun Studio (Ömer Faruk Gürün). Data is collected automatically through the Game and the services listed above, and we process it:</p>
+<p>Where the GDPR or Türkiye’s Personal Data Protection Law No. 6698 (KVKK) applies, the data controller is Ömer Faruk Gürün (Gurun Studio). Data is collected automatically through the Game and the services listed above, and we process it:</p>
 <ul>
   <li>to perform our agreement with you: providing the Game and purchases (GDPR Art. 6(1)(b); KVKK Art. 5(2)(c));</li>
-  <li>for our legitimate interests: security, fraud prevention, crash reporting, measuring our own marketing and improving the Game (GDPR Art. 6(1)(f); KVKK Art. 5(2)(f));</li>
+  <li>for our legitimate interests: security, fraud prevention, crash reporting, improving the Game, where those interests are not overridden by your rights and the applicable law permits that basis (GDPR Art. 6(1)(f); KVKK Art. 5(2)(f));</li>
   <li>to comply with legal obligations, for example tax and consumer law records of purchases (GDPR Art. 6(1)(c); KVKK Art. 5(2)(ç));</li>
   <li>with your consent where the law requires it: personalised advertising and, on iOS, tracking (GDPR Art. 6(1)(a); KVKK Art. 5(1)). You can withdraw consent at any time; this does not affect processing that happened before.</li>
 </ul>
 
 <h2>5. Who we share data with</h2>
-<p>We do not sell your personal data. We share it only with the service providers that run the Game for us, each under its own data processing terms, which require them to protect personal data at least as well as described in this policy:</p>
+<p>We do not sell your personal data for money. Data is disclosed to the following providers, under the terms that apply to each service. A provider may act as our processor for some operations and as an independent controller for others; its own privacy notice describes those uses:</p>
 <ul>
   <li><strong>Google LLC</strong> and its affiliates: Firebase (Authentication, Cloud Firestore, Analytics, Crashlytics, Remote Config), Google Play Games Services, AdMob and the User Messaging Platform, and Google Play Billing.</li>
   <li><strong>Apple Inc.</strong> (iOS only): App Store purchases.</li>
-  <li><strong>Meta Platforms</strong>: app install and open events, outside the EEA, the UK and Switzerland.</li>
+  <li><strong>Meta Platforms</strong>: advertising measurement and the SDK data described above.</li>
+  <li><strong>Unity Technologies</strong>: Unity IAP purchase processing, technical data and transaction reporting.</li>
+  <li><strong>GitHub</strong>: hosting this website through GitHub Pages.</li>
 </ul>
 <p>More information:</p>
 <ul>
@@ -71,26 +78,28 @@
   <li><a href="https://policies.google.com/technologies/partner-sites" rel="noopener">How Google uses information from apps that use its services</a></li>
   <li><a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a></li>
   <li><a href="https://www.apple.com/legal/privacy/" rel="noopener">Apple Privacy Policy</a></li>
-  <li><a href="https://www.facebook.com/privacy/policy/" rel="noopener">Meta Privacy Policy</a> (install and open events only, outside the EEA, the UK and Switzerland)</li>
+  <li><a href="https://www.facebook.com/privacy/policy/" rel="noopener">Meta Privacy Policy</a> (app events and advertising measurement)</li>
+  <li><a href="https://unity.com/legal/game-player-and-app-user-privacy-policy" rel="noopener">Unity player privacy information</a> and <a href="https://unity.com/legal/iap-additional-terms" rel="noopener">Unity IAP terms</a></li>
+  <li><a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener">GitHub Privacy Statement</a></li>
 </ul>
 <p>We may also disclose information if required by law or by a court or authority, or where needed to protect the rights and safety of our players or ourselves. If the Game is transferred to another publisher (for example in a sale or a publishing agreement), the data described here may be transferred with it; the new publisher must keep protecting it, and this policy will be updated to name them.</p>
 
 <h2>6. International transfers</h2>
-<p>Our service providers store and process data on servers in the United States, the European Union and other countries. For users in the EEA, the UK and Switzerland, these transfers rely on the safeguards in the providers’ terms, such as the EU–US Data Privacy Framework and the European Commission’s Standard Contractual Clauses. For users in Türkiye, your personal data is transferred abroad to the service providers listed in section 5 for the purposes described in this policy, in accordance with Article 9 of the KVKK.</p>
+<p>Google, Meta, Unity, Apple and GitHub may process data in the United States, the European Economic Area and other countries. Applicable provider terms describe their processing locations and transfer mechanisms, which may include Standard Contractual Clauses or participation in a recognised data-protection framework. The applicable safeguard depends on the provider, the parties and your jurisdiction; use of an SDK is not by itself proof that all transfer requirements are satisfied. Contact us for information about the recipients and safeguards relevant to your request. Mandatory rights under the GDPR, UK law and Article 9 of the KVKK are not waived by using the Game or acknowledging this notice.</p>
 
 <h2>7. Retention</h2>
 <ul>
   <li>Progress and settings stay on your device until you uninstall the Game or clear its data.</li>
-  <li>The cloud save is kept until you ask us to delete it, or until it has not been used for 24 months.</li>
-  <li>Analytics data is kept according to the retention setting of our Google Analytics property (at most 14 months for user-level data).</li>
-  <li>Crash reports are kept for up to 90 days.</li>
+  <li>The cloud save and authentication record are retained to provide restoration until their deletion is requested or the service is ended. The current implementation does not automatically delete inactive saves after 24 months.</li>
+  <li>User/event-level Analytics data follows the Google Analytics property's configured retention period. In the standard service this is generally 2 or 14 months; new activity can reset user-level retention. Aggregated reports are not subject to the same retention limit.</li>
+  <li>Firebase states that removal of crash reports and associated identifiers from live/backup systems begins after 90 days; this is not a promise of complete erasure on day 90.</li>
   <li>Support emails are kept as long as needed to handle your request.</li>
-  <li>Records of purchases are kept for as long as tax and consumer law require.</li>
+  <li>The Game keeps recent delivery transaction IDs locally to avoid duplicate rewards. Store and Unity records follow their applicable retention terms; legally required records may be retained where necessary. Advertising and SDK service records follow the relevant provider's retention and deletion rules.</li>
 </ul>
 
 <h2 id="delete">8. Your rights and choices</h2>
 <ul>
-  <li><strong>Delete your data:</strong> uninstalling the Game (or clearing its data in your device settings) deletes the progress and settings on your device. To also delete the cloud save, email us the Player ID shown at the bottom of the Game’s settings window; we delete it within 30 days. Neither can be undone.</li>
+  <li><strong>Delete your data:</strong> uninstalling the Game (or clearing its data in your device settings) deletes the progress and settings on your device. To also delete the cloud save, email us the Player ID shown at the bottom of the Game’s settings window; we normally respond and act on valid requests within 30 days, subject to applicable law and identity verification. Requests cover the cloud-save document and associated Firebase Authentication record, not merely the local app. Provider backup deletion may take longer under their published schedules. Deletion cannot be undone.</li>
   <li><strong>Other requests:</strong> email us. Depending on where you live, you have the right to:
     <ul>
       <li>know whether we process your data, and get access to it and a copy of it;</li>
@@ -102,9 +111,9 @@
       <li>object to a result against you that arises only from automated processing;</li>
       <li>claim compensation for damage caused by unlawful processing.</li>
     </ul>
-    These rights include your rights under Article 11 of the KVKK. We answer free of charge within 30 days. Because the Game has no named account, we need your Player ID (for the cloud save) or details such as your device model and the date you installed the Game to find the data a request refers to.</li>
+    These rights include your rights under Article 11 of the KVKK. We normally answer within 30 days; where the applicable law permits a longer period or a fee for exceptional requests, we will explain it. The Player ID identifies your cloud save; it does not necessarily identify your Analytics, Crashlytics, advertising or Unity records. Additional identifiers or provider-specific procedures may be needed. We do not promise that a device model and installation date uniquely identify every SDK record.</li>
   <li><strong>Ads:</strong> on iOS turn tracking off in iOS Settings; on Android reset or delete your advertising ID.</li>
-  <li><strong>US state privacy rights:</strong> we do not sell personal information for money. Personalised advertising may count as “sharing” under some US state laws; you can opt out by turning off tracking (iOS) or deleting your advertising ID (Android), or by emailing us.</li>
+  <li><strong>US state privacy rights:</strong> we do not sell personal information for money. Personalised advertising may count as “sharing” under some US state laws; use the applicable privacy-options form when available and contact us. Turning off tracking (iOS) or deleting your advertising ID (Android) limits those identifiers but does not necessarily stop all SDK data processing.</li>
   <li><strong>Complaints:</strong> you can complain to your local data protection authority (in Türkiye: the Personal Data Protection Authority, KVKK; in the EU: the authority of your country).</li>
 </ul>
 
@@ -115,10 +124,10 @@
 <p>Data is transmitted over encrypted connections. No system is completely secure; if a data breach affects your personal data, we will inform you and the competent authorities as the law requires.</p>
 
 <h2>11. Our website</h2>
-<p>This website only shows our games and policies. It does not use cookies, analytics or advertising trackers.</p>
+<p>We do not add advertising trackers, analytics scripts or our own cookies to this static website. It is hosted by GitHub Pages; GitHub receives technical connection information such as your IP address and browser/request information under its own privacy statement. Links to stores, providers and email services take you to services with their own privacy terms.</p>
 
-<h2>12. Changes</h2>
-<p>We may update this policy. The effective date and version above show when it last changed; the current version is always on this page.</p>
+<h2>12. Changes and acknowledgement</h2>
+<p>The date and version above identify this notice. We will notify players of material changes where required. Versions supporting the updated legal notice show a separate update message when the required acknowledgement revision increases. Earlier released versions cannot be made to display a new notice merely by editing this website; an app update may be needed. Acknowledgement is recorded locally with its revision and time and is separate from any consent required for a particular processing purpose.</p>
 
 <footer class="muted">© 2026 Gurun Studio · <a href="mailto:1omerfarukgurun@gmail.com">1omerfarukgurun@gmail.com</a></footer>
 </main>

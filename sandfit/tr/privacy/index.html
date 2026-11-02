@@ -14,56 +14,63 @@
 </header>
 
 <h1>Gizlilik Politikası ve KVKK Aydınlatma Metni</h1>
-<p class="muted">Yürürlük tarihi: 31 Ekim 2026 · Sürüm 4</p>
+<p class="muted">Yürürlük tarihi: 2 Kasım 2026 · Sürüm 5</p>
 
-<p>Bu metin, <strong>Sand Fit: Block Puzzle</strong> mobil oyununun (“Oyun”) hangi bilgileri, neden topladığını, kimlerle paylaştığını ve sahip olduğunuz hakları açıklar. Oyunun yayıncısı ve veri sorumlusu <strong>Gurun Studio</strong>’dur (Ömer Faruk Gürün, Türkiye); metinde “biz” olarak geçer. İletişim: <a href="mailto:1omerfarukgurun@gmail.com">1omerfarukgurun@gmail.com</a>.</p>
+<p>Bu metin, <strong>Sand Fit: Block Puzzle</strong> mobil oyununun (“Oyun”) hangi bilgileri, neden topladığını, kimlerle paylaştığını ve sahip olduğunuz hakları açıklar. Oyunun yayıncısı ve veri sorumlusu <strong>Ömer Faruk Gürün</strong>’dür (<strong>Gurun Studio</strong> adıyla, Türkiye); metinde “biz” olarak geçer. İletişim: <a href="mailto:1omerfarukgurun@gmail.com">1omerfarukgurun@gmail.com</a>.</p>
 
 <h2>1. Özet</h2>
 <ul>
   <li>Oyunda giriş ekranı yoktur. Adınızı, e-posta adresinizi, telefon numaranızı, rehberinizi, fotoğraflarınızı veya kesin konumunuzu istemeyiz.</li>
-  <li>İlerlemeniz, coinleriniz, güçlendiricileriniz ve satın aldıklarınız cihazınızda saklanır; ayrıca rastgele, anonim bir oyuncu kimliği altında bulut kaydına yedeklenir, böylece Oyunu yeniden kurduğunuzda geri gelebilir. Ayarlar yalnızca cihazınızda kalır.</li>
+  <li>İlerlemeniz, coinleriniz, güçlendiricileriniz ve satın aldıklarınız cihazınızda saklanır; ayrıca rastgele, takma adlı bir oyuncu kimliği altında bulut kaydına yedeklenir. Geri yükleme platforma ve kullanılabilen kimlik bilgilerine bağlıdır, garanti edilmez. Ayarlar cihazınızda kalır.</li>
   <li>Oyunda Google AdMob ile reklam gösterilir; bulut kaydı, analiz ve çökme raporları için Google Firebase kullanılır.</li>
-  <li>AEA, Birleşik Krallık ve İsviçre dışında Oyun, kurulduğunu ve açıldığını Meta’ya (Facebook) bildirir; böylece Instagram ve Facebook’taki kendi reklamlarımızı ölçebiliriz.</li>
+  <li>Oyun, Instagram ve Facebook reklamlarımızı ölçmek için Meta SDK kullanır. Etkinleştirme Google’ın onay durumuna bağlıdır. Eski sürümlerde açılan otomatik uygulama olayı kaydı, kurulum ve açılışın yanında satın alma olaylarını da kapsayabilir.</li>
   <li>Satın almalar Google Play veya Apple App Store tarafından işlenir. Ödeme bilgilerinizi hiçbir zaman görmeyiz.</li>
 </ul>
 
 <h2>2. Toplanan bilgiler</h2>
-<p>Aşağıdakiler Oyun ve listelenen hizmetler içinde kalır, hiçbiri satılmaz.</p>
+<p>Oyun ve SDK’ları aşağıdaki veri türlerini işler. Rastgele bir kimlik de kurulum, satın alma veya ilerlemeyle ilişkilendirilebildiği için kişisel veri olabilir. Kartınızın tam ödeme bilgileri bize ulaşmaz.</p>
 <div class="table-wrap">
 <table>
   <tr><th>Bilgi</th><th>Amaç</th><th>Hizmet</th></tr>
   <tr><td><strong>Oyun ve cihaz olayları</strong>: başlatılan, kazanılan, kaybedilen veya yarıda bırakılan bölümler, kullanılan güçlendiriciler, kazanılan ve harcanan coinler, izlenen reklamlar, uygulama içi satın alma olayları, uygulama örneği kimliği, cihaz modeli, işletim sistemi sürümü, dil, ülke (IP adresinden türetilir).</td><td>Oyunun nasıl oynandığını anlamak, zorluğu dengelemek, sorunları gidermek.</td><td>Google Analytics for Firebase</td></tr>
-  <tr><td><strong>Bulut kaydı</strong>: Oyunun oluşturduğu rastgele anonim oyuncu kimliği ve onun altında bölümünüz, coinleriniz, güçlendiricileriniz, sahip olduğunuz ürünler, alınan ödüller, Oyun sürümü ve son kayıt zamanı. Android’de Google Play Games kullanıyorsanız Play Games oyuncu kimliğiniz ve görünen adınız bu kimliğe bağlanır.</td><td>Oyunu yeniden kurduğunuzda veya telefon değiştirdiğinizde ilerlemenizi ve satın aldığınız coinleri korumak.</td><td>Firebase Authentication, Cloud Firestore, Google Play Games Hizmetleri (Android)</td></tr>
+  <tr><td><strong>Bulut kaydı</strong>: Oyunun oluşturduğu rastgele takma adlı oyuncu kimliği ve onun altında bölümünüz, coinleriniz, güçlendiricileriniz, sahip olduğunuz ürünler, alınan ödüller, Oyun sürümü ve son kayıt zamanı. Android’de Google Play Games kullanıyorsanız Play Games oyuncu kimliğiniz ve görünen adınız bu kimliğe bağlanır.</td><td>Oyunu yeniden kurduğunuzda veya telefon değiştirdiğinizde ilerlemenizi ve satın aldığınız coinleri korumak.</td><td>Firebase Authentication, Cloud Firestore, Google Play Games Hizmetleri (Android)</td></tr>
   <tr><td><strong>Çökme ve hata raporları</strong>: hata ayrıntıları, çökme anındaki cihaz durumu, kurulum kimliği.</td><td>Çökmeleri bulmak ve düzeltmek.</td><td>Firebase Crashlytics</td></tr>
   <tr><td><strong>Reklam verileri</strong>: reklam kimliği, IP adresi, cihaz bilgileri, reklam etkileşimleri ve gerekli yerlerde onay tercihiniz.</td><td>Reklam göstermek, ölçmek ve reklam sahtekârlığını önlemek; kişiselleştirilmiş reklam yalnızca izin verdiyseniz.</td><td>Google AdMob, Google User Messaging Platform</td></tr>
-  <tr><td><strong>Uygulama kurulum ve açılış olayları</strong>: Oyunun kurulduğu veya açıldığı bilgisi, uygulama sürümü, cihaz modeli, işletim sistemi sürümü, reklam kimliği (iOS’ta yalnızca izleme izni verdiyseniz) ve IP adresi. AEA, Birleşik Krallık ve İsviçre’de toplanmaz.</td><td>Instagram ve Facebook reklamlarımızın kaç oyuncu getirdiğini ölçmek.</td><td>Meta Platforms (Meta SDK)</td></tr>
-  <tr><td><strong>Satın almalar</strong>: ürün, sipariş/işlem numarası ve satın alma makbuzu.</td><td>Satın aldığınızı teslim etmek, tek seferlik ürünleri geri yüklemek, makbuzu doğrulamak.</td><td>Google Play Faturalandırma, Apple App Store</td></tr>
+  <tr><td><strong>Meta uygulama olayları</strong>: kurulum/etkinleştirme, uygulama açılışları, uygulama ve SDK sürümü, cihaz ve işletim sistemi bilgileri, SDK kimlikleri, IP adresi ve kullanılabildiği/izin verildiği ölçüde reklam kimliği. Otomatik kayıt açık olan eski sürümler satın alma olayları da gönderebilir. Kodumuz Google UMP, gizlilik tercihleri girişinin gerekli olmadığını bildirdiğinde etkinleştirme ister; bu durum tek başına bölgenizin veya rızanızın hukuki değerlendirmesi değildir.</td><td>Instagram ve Facebook reklamlarımızın kaç oyuncu getirdiğini ölçmek.</td><td>Meta Platforms (Meta SDK)</td></tr>
+  <tr><td><strong>Satın almalar</strong>: ürün, sipariş/işlem numarası ve satın alma makbuzu.</td><td>Satın alınanı teslim ve geri yüklemek, aynı ödülün iki kez verilmesini önlemek, satın alma işlemlerini yürütmek ve raporlamak. Oyunun geliştirici tarafından işletilen ayrı bir makbuz doğrulama sunucusu yoktur.</td><td>Google Play Faturalandırma, Apple App Store, Unity In-App Purchasing</td></tr>
+  <tr><td><strong>Unity satın alma SDK verileri</strong>: ürün, fiyat/para birimi, işlem kimlikleri, satın alma denemeleri/sonuçları, makbuz veya mağaza satın alma verisi, kurulum/oturum ve sağlayıcı kimlikleri, uygulama/motor/SDK sürümü, cihaz modeli, dil/bölge ve işletim sistemi. Alanlar platforma, SDK ayarlarına ve izinlere göre değişir.</td><td>Satın alma işlemleri, işlem mutabakatı, tanılama ve Unity’nin geçerli koşulları kapsamındaki SDK raporları.</td><td>Unity Technologies (Unity IAP 5.4.3)</td></tr>
+  <tr><td><strong>Uzaktan ayarlar</strong>: Firebase kurulum kimliği, IP adresi ve uygulama sürümü gibi teknik istek bilgileri.</td><td>Oyun sürümüne uygun ayarları iletmek.</td><td>Firebase Remote Config / Firebase Installations</td></tr>
   <tr><td><strong>Destek mesajları</strong>: e-posta adresiniz ve bize yazdıklarınız.</td><td>Talebinizi yanıtlamak.</td><td>E-posta</td></tr>
 </table>
 </div>
-<p>Ses, titreşim ve dil gibi ayarlar yalnızca cihazınızda saklanır. Bulut kaydında e-posta adresi veya başka bir iletişim bilgisi yoktur; yalnızca oyuncu kimliğinin sahibi olan Oyun kurulumu tarafından okunup yazılabilir. Android’de Oyun, Google Play Games kullanıyorsanız ona sessizce giriş yapar; böylece yeniden kurulumda aynı kayıt bulunur. Play Games kullanmıyorsanız Oyunu kaldırmak kimliği de cihazdan siler ve yeniden kurulumda yeni bir kayıt başlar.</p>
+<p>Ses, titreşim ve dil gibi ayarlar yalnızca cihazınızda saklanır. Bulut kaydında e-posta adresi veya başka bir iletişim bilgisi yoktur; Firestore kuralları istemci erişimini, ilgili oyuncu kimliğiyle doğrulanmış kullanıcıyla sınırlar. Yetkili hizmet yöneticileri destek, güvenlik ve silme talepleri için verilere erişebilir. Android’de Oyun, Google Play Games kullanıyorsanız ona sessizce giriş yapar; böylece yeniden kurulumda aynı kayıt bulunur. Play Games kullanmıyorsanız Oyunu kaldırmak kimliği de cihazdan siler ve yeniden kurulumda yeni bir kayıt başlar.</p>
 
-<h2>3. Reklamlar ve onay</h2>
-<p>Avrupa Ekonomik Alanı, Birleşik Krallık veya İsviçre’deyseniz Oyun, kişiselleştirilmiş reklam göstermeden önce Google’ın onay penceresiyle izninizi ister; bu pencere Google’ın reklam iş ortaklarını da listeler. Onay vermezseniz kişiselleştirilmemiş reklamlar görebilirsiniz.</p>
+<h2>3. Reklamlar, bildirimler ve tercihler</h2>
+<p>Avrupa Ekonomik Alanı, Birleşik Krallık veya İsviçre’deyseniz Oyun, kişiselleştirilmiş reklam göstermeden önce Google’ın onay penceresiyle izninizi ister; bu pencere Google’ın reklam iş ortaklarını da listeler. Onay vermezseniz onay durumuna ve Google’ın kurallarına göre kişiselleştirilmemiş/sınırlı reklam gösterilebilir veya reklam sunulmayabilir. Ayarlarda “Reklam gizliliği tercihleri” düğmesini sunan sürümlerde bu düğme, gerekli olduğunda Google’ın tercih formunu yeniden açar. Eski sürümlerde bu düğme yoktur; cihaz ayarları ve iletişim adresimiz kullanılabilir.</p>
 <p><strong>iOS:</strong> Oyun, izleme izni ister (App Tracking Transparency). Cihazınızın reklam kimliği (IDFA) AdMob ve Meta tarafından yalnızca izin verirseniz kullanılır. Bunu istediğiniz zaman <strong>iOS Ayarlar → Gizlilik ve Güvenlik → İzleme</strong> bölümünden değiştirebilirsiniz.</p>
 <p><strong>Android:</strong> reklam kimliğinizi cihaz ayarlarından (Ayarlar → Gizlilik → Reklamlar veya Google → Reklamlar) sıfırlayabilir veya silebilirsiniz.</p>
 <p>Kişiselleştirilmiş reklamlar, yukarıdaki reklam verilerine dayanarak Google tarafından otomatik olarak yapılan profillemeyi içerir. Hakkınızda hukuki veya benzeri önemli sonuç doğuran hiçbir karar vermeyiz. <strong>Reklamları Kaldır</strong> satın alımı bölümler arasında gösterilen reklamları kaldırır; ödül için isteğe bağlı izlenen reklamlar kullanılmaya devam eder.</p>
 
+<p><strong>Yerel hatırlatmalar:</strong> gerektiğinde cihaz izninizle bildirimler cihaz üzerinde planlanır. Son oynama saatleri, son oturum zamanı ve izin isteme geçmişi yerel saklanır. Firebase Cloud Messaging veya uzaktan bildirim tokenı hizmeti kullanılmaz. Bildirim izni/açılış olayları, ödül takvimi kullanımı, kurtarma sonuçları ve cihazın ısınma durumu Firebase Analytics olaylarına dahil olabilir. Bildirimleri cihaz ayarlarından kapatabilirsiniz.</p>
+<p><strong>Bilgilendirme rıza değildir:</strong> koşulları kabul etmek veya bu metin hakkında bilgilendirildiğini belirtmek tek başına reklam, analiz veya takip izni vermez. ATT uygulamalar arası takiple, Google UMP desteklenen reklam gizliliği mesajlarıyla ilgilidir; hiçbiri bütün SDK’lar için toplu rıza değildir. Yayındaki sürümlerde Firebase Analytics ve Crashlytics için ayrı bir oyun içi kapatma seçeneği bulunmamaktadır; haklarınız ve tercihleriniz için bize başvurabilirsiniz.</p>
+
 <h2>4. Veri sorumlusu, toplama yöntemi ve hukuki sebepler</h2>
-<p>6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) ve GDPR kapsamında veri sorumlusu Gurun Studio’dur (Ömer Faruk Gürün). Kişisel verileriniz Oyun ve yukarıda sayılan hizmetler aracılığıyla otomatik yollarla toplanır ve şu hukuki sebeplere dayanılarak işlenir:</p>
+<p>6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) ve GDPR kapsamında veri sorumlusu Ömer Faruk Gürün’dür (Gurun Studio). Kişisel verileriniz Oyun ve yukarıda sayılan hizmetler aracılığıyla otomatik yollarla toplanır ve şu hukuki sebeplere dayanılarak işlenir:</p>
 <ul>
   <li>sizinle kurulan sözleşmenin kurulması ve ifası: Oyunun ve satın almaların sunulması (KVKK md. 5/2-c; GDPR md. 6/1-b);</li>
-  <li>temel hak ve özgürlüklerinize zarar vermemek kaydıyla meşru menfaatimiz: güvenlik, sahtekârlığın önlenmesi, çökme raporları, kendi reklamlarımızın ölçülmesi ve Oyunun geliştirilmesi (KVKK md. 5/2-f; GDPR md. 6/1-f);</li>
+  <li>temel hak ve özgürlüklerinize zarar vermemek kaydıyla meşru menfaatimiz: güvenlik, sahtekârlığın önlenmesi, çökme raporları, uygulanacak hukukun bu sebebe izin verdiği ölçüde Oyunun geliştirilmesi (KVKK md. 5/2-f; GDPR md. 6/1-f);</li>
   <li>hukuki yükümlülüklerimizin yerine getirilmesi, örneğin satın almalara ilişkin vergi ve tüketici mevzuatı kayıtları (KVKK md. 5/2-ç; GDPR md. 6/1-c);</li>
   <li>kanunun gerektirdiği durumlarda açık rızanız: kişiselleştirilmiş reklam ve iOS’ta izleme (KVKK md. 5/1; GDPR md. 6/1-a). Rızanızı istediğiniz zaman geri alabilirsiniz; bu, geri almadan önceki işlemeleri etkilemez.</li>
 </ul>
 
 <h2>5. Aktarım ve paylaşım</h2>
-<p>Kişisel verilerinizi satmayız. Verileriniz yalnızca Oyunu bizim adımıza çalıştıran hizmet sağlayıcılarla, her birinin kendi veri işleme koşulları çerçevesinde paylaşılır. Bu koşullar, verilerin en az bu metinde anlatıldığı ölçüde korunmasını gerektirir:</p>
+<p>Kişisel verilerinizi para karşılığında satmayız. Aşağıdaki sağlayıcılarla, her hizmete uygulanan koşullar çerçevesinde veri paylaşılır. Sağlayıcı bazı işlemlerde veri işleyen, bazılarında bağımsız veri sorumlusu olabilir; kendi gizlilik metni bu kullanımları açıklar:</p>
 <ul>
   <li><strong>Google LLC</strong> ve bağlı şirketleri: Firebase (Authentication, Cloud Firestore, Analytics, Crashlytics, Remote Config), Google Play Games Hizmetleri, AdMob ve User Messaging Platform, Google Play Faturalandırma.</li>
   <li><strong>Apple Inc.</strong> (yalnızca iOS): App Store satın almaları.</li>
-  <li><strong>Meta Platforms</strong>: AEA, Birleşik Krallık ve İsviçre dışında uygulama kurulum ve açılış olayları.</li>
+  <li><strong>Meta Platforms</strong>: reklam ölçümü ve yukarıda açıklanan SDK verileri.</li>
+  <li><strong>Unity Technologies</strong>: Unity IAP satın alma işlemleri, teknik veriler ve işlem raporları.</li>
+  <li><strong>GitHub</strong>: bu sitenin GitHub Pages ile barındırılması.</li>
 </ul>
 <p>Ayrıntılı bilgi:</p>
 <ul>
@@ -71,27 +78,29 @@
   <li><a href="https://policies.google.com/technologies/partner-sites?hl=tr" rel="noopener">Google’ın, hizmetlerini kullanan uygulamalardan gelen bilgileri nasıl kullandığı</a></li>
   <li><a href="https://policies.google.com/privacy?hl=tr" rel="noopener">Google Gizlilik Politikası</a></li>
   <li><a href="https://www.apple.com/tr/legal/privacy/tr/" rel="noopener">Apple Gizlilik Politikası</a></li>
-  <li><a href="https://www.facebook.com/privacy/policy/" rel="noopener">Meta Gizlilik Politikası</a> (yalnızca kurulum ve açılış olayları; AEA, Birleşik Krallık ve İsviçre dışında)</li>
+  <li><a href="https://www.facebook.com/privacy/policy/" rel="noopener">Meta Gizlilik Politikası</a> (uygulama olayları ve reklam ölçümü)</li>
+  <li><a href="https://unity.com/legal/game-player-and-app-user-privacy-policy" rel="noopener">Unity oyuncu gizlilik bilgileri</a> ve <a href="https://unity.com/legal/iap-additional-terms" rel="noopener">Unity IAP koşulları</a></li>
+  <li><a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener">GitHub Gizlilik Bildirimi</a></li>
 </ul>
 <p>Kanunen zorunlu olması, bir mahkeme veya yetkili makam tarafından istenmesi ya da oyuncularımızın veya bizim hak ve güvenliğimizi korumak için gerekli olması halinde bilgileri paylaşabiliriz. Oyunun başka bir yayıncıya devredilmesi (örneğin satış veya yayıncılık anlaşması) halinde burada anlatılan veriler de devredilebilir; yeni yayıncı verileri korumakla yükümlü olur ve bu metin onu belirtecek şekilde güncellenir.</p>
 
 <h2>6. Yurt dışına aktarım</h2>
-<p>Hizmet sağlayıcılarımız verileri Amerika Birleşik Devletleri, Avrupa Birliği ve diğer ülkelerdeki sunucularda saklar ve işler. Türkiye’deki kullanıcılarımızın kişisel verileri, 5. bölümde sayılan hizmet sağlayıcılara bu metinde açıklanan amaçlarla, KVKK’nın 9. maddesine uygun olarak yurt dışına aktarılır. AEA, Birleşik Krallık ve İsviçre’deki kullanıcılar için aktarımlar, hizmet sağlayıcıların koşullarındaki AB–ABD Veri Gizliliği Çerçevesi ve Avrupa Komisyonu Standart Sözleşme Maddeleri gibi güvencelere dayanır.</p>
+<p>Google, Meta, Unity, Apple ve GitHub verileri ABD, Avrupa Ekonomik Alanı ve diğer ülkelerde işleyebilir. Sağlayıcıların geçerli koşulları işleme yerlerini ve Standart Sözleşme Maddeleri veya tanınan veri koruma çerçevelerine katılım gibi aktarım mekanizmalarını açıklar. Uygulanacak güvence sağlayıcıya, taraflara ve ülkenize bağlıdır; bir SDK kullanmak tek başına bütün aktarım şartlarının sağlandığını kanıtlamaz. Talebinizle ilgili alıcı ve güvenceler hakkında bilgi için bize başvurabilirsiniz. Oyunu kullanmak veya bu metin hakkında bilgilendirilmek, KVKK md. 9, GDPR ve Birleşik Krallık hukuku kapsamındaki emredici haklarınızdan vazgeçmek değildir.</p>
 
 <h2>7. Saklama süreleri</h2>
 <ul>
   <li>İlerleme ve ayarlar, Oyunu kaldırana veya verilerini temizleyene kadar cihazınızda kalır.</li>
-  <li>Bulut kaydı, silinmesini isteyene kadar veya 24 ay boyunca hiç kullanılmayana kadar saklanır.</li>
-  <li>Analiz verileri Google Analytics saklama ayarımıza göre en fazla 14 ay saklanır.</li>
-  <li>Çökme raporları en fazla 90 gün saklanır.</li>
+  <li>Bulut kaydı ve kimlik doğrulama kaydı, geri yükleme hizmetini sağlamak amacıyla silinmesi istenene veya hizmet sona erene kadar saklanır. Mevcut uygulama, kullanılmayan kayıtları 24 ay sonunda otomatik silmez.</li>
+  <li>Kullanıcı/olay düzeyindeki analiz verileri Google Analytics mülkünün saklama ayarına tabidir. Standart hizmette bu genellikle 2 veya 14 aydır; yeni etkinlik kullanıcı düzeyindeki süreyi yeniden başlatabilir. Toplu raporlar aynı saklama sınırına tabi değildir.</li>
+  <li>Firebase, çökme raporları ve ilişkili kimliklerin canlı/yedek sistemlerden kaldırılma sürecini 90 gün sonra başlattığını belirtir; bu, 90. günde bütün kopyaların silindiği garantisi değildir.</li>
   <li>Destek e-postaları talebiniz sonuçlanana kadar gerekli süre boyunca saklanır.</li>
-  <li>Satın alma kayıtları vergi ve tüketici mevzuatının öngördüğü süre boyunca saklanır.</li>
+  <li>Oyun, aynı ödülü tekrar vermemek için son teslimat işlem kimliklerini cihazda saklar. Mağaza ve Unity kayıtları kendi saklama koşullarına tabidir; kanunen zorunlu kayıtlar gerektiği sürece saklanabilir. Reklam ve SDK hizmet kayıtlarına ilgili sağlayıcının saklama/silme kuralları uygulanır.</li>
 </ul>
 <p>Süresi dolan veriler silinir, yok edilir veya anonim hale getirilir.</p>
 
 <h2 id="delete">8. Haklarınız (KVKK md. 11)</h2>
 <ul>
-  <li><strong>Verilerinizi silmek:</strong> Oyunu kaldırmak (veya cihaz ayarlarından verilerini temizlemek) cihazınızdaki ilerlemeyi ve ayarları siler. Bulut kaydının da silinmesi için Oyunun ayarlar penceresinin altında görünen Oyuncu Kimliğini bize e-postayla gönderin; en geç 30 gün içinde sileriz. İki işlem de geri alınamaz.</li>
+  <li><strong>Verilerinizi silmek:</strong> Oyunu kaldırmak (veya cihaz ayarlarından verilerini temizlemek) cihazınızdaki ilerlemeyi ve ayarları siler. Bulut kaydının da silinmesi için Oyunun ayarlar penceresinin altında görünen Oyuncu Kimliğini bize e-postayla gönderin; geçerli talepleri, kimlik doğrulama ve uygulanacak hukuk çerçevesinde normalde 30 gün içinde yanıtlar ve işleme alırız. Talep yalnız cihaz verisini değil, bulut belgesi ve ilişkili Firebase Authentication kaydını kapsar. Sağlayıcı yedeklerinin silinmesi yayımlanan takvimlerine göre daha uzun sürebilir. Silme geri alınamaz.</li>
   <li><strong>Diğer talepler:</strong> bize e-posta gönderin. KVKK’nın 11. maddesi uyarınca şu haklara sahipsiniz:
     <ul>
       <li>kişisel verilerinizin işlenip işlenmediğini öğrenmek, işlenmişse buna ilişkin bilgi talep etmek;</li>
@@ -103,8 +112,8 @@
       <li>işlenen verilerin münhasıran otomatik sistemlerle analiz edilmesi suretiyle aleyhinize bir sonucun ortaya çıkmasına itiraz etmek;</li>
       <li>kanuna aykırı işleme nedeniyle zarara uğramanız halinde zararın giderilmesini talep etmek.</li>
     </ul>
-    AEA ve Birleşik Krallık’taki kullanıcılar ayrıca işlemeyi kısıtlama, itiraz etme ve veri taşınabilirliği haklarına sahiptir. Başvurular ücretsiz olarak en geç 30 gün içinde sonuçlandırılır. Oyunda adınıza açılmış bir hesap olmadığı için, talebinizin hangi verilerle ilgili olduğunu bulabilmek adına Oyuncu Kimliğiniz (bulut kaydı için) veya cihaz modeliniz ve Oyunu kurduğunuz tarih gibi bilgiler isteyebiliriz.</li>
-  <li><strong>Reklamlar:</strong> iOS’ta iOS Ayarlar’dan izlemeyi kapatın; Android’de reklam kimliğinizi sıfırlayın veya silin.</li>
+    AEA ve Birleşik Krallık’taki kullanıcılar ayrıca işlemeyi kısıtlama, itiraz etme ve veri taşınabilirliği haklarına sahiptir. Başvurular normalde 30 gün içinde yanıtlanır; uygulanacak hukukun ek süreye veya istisnai taleplerde ücrete izin verdiği hallerde gerekçesini açıklarız. Oyuncu Kimliği bulut kaydını belirtir; Analytics, Crashlytics, reklam veya Unity kayıtlarını aynı kimlikle bulmak mümkün olmayabilir. Ek kimlikler veya sağlayıcıya özel süreçler gerekebilir. Cihaz modeli ve kurulum tarihinin bütün SDK kayıtlarını tek başına belirlediğini garanti etmeyiz.</li>
+  <li><strong>Reklamlar ve ABD eyalet hakları:</strong> parayla kişisel veri satmayız; kişiselleştirilmiş reklam bazı eyaletlerde “paylaşım” sayılabilir. Varsa ilgili gizlilik tercih formunu kullanın ve bize başvurun. iOS’ta izlemeyi kapatmak veya Android’de reklam kimliğini silmek bu kimlikleri sınırlar; bütün SDK işlemlerini mutlaka durdurmaz.</li>
   <li><strong>Şikâyet:</strong> Kişisel Verileri Koruma Kurulu’na (AB’de kendi ülkenizin veri koruma otoritesine) şikâyet hakkınız saklıdır.</li>
 </ul>
 
@@ -115,10 +124,10 @@
 <p>Veriler şifreli bağlantılarla iletilir. Hiçbir sistem tamamen güvenli değildir; kişisel verilerinizi etkileyen bir veri ihlali olursa, kanunun gerektirdiği şekilde size ve Kişisel Verileri Koruma Kurulu’na bildiririz.</p>
 
 <h2>11. İnternet sitemiz</h2>
-<p>Bu site yalnızca oyunlarımızı ve politikalarımızı gösterir. Çerez, analiz veya reklam izleyicisi kullanmaz.</p>
+<p>Bu statik siteye kendi çerezlerimizi, analiz betiklerini veya reklam izleyicilerini eklemeyiz. Site GitHub Pages üzerinde barındırılır; GitHub IP adresiniz, tarayıcı ve istek bilgileri gibi teknik bağlantı bilgilerini kendi gizlilik bildirimi kapsamında alır. Mağaza, sağlayıcı ve e-posta bağlantıları sizi kendi gizlilik koşulları bulunan hizmetlere götürür.</p>
 
-<h2>12. Değişiklikler</h2>
-<p>Bu metni güncelleyebiliriz. Yukarıdaki yürürlük tarihi ve sürüm son değişikliği gösterir; güncel metin her zaman bu sayfadadır.</p>
+<h2>12. Değişiklikler ve bilgilendirme</h2>
+<p>Yukarıdaki tarih ve sürüm bu metni tanımlar. Önemli değişikliklerde gerektiği şekilde oyuncuları bilgilendiririz. Güncellenmiş yasal bildirim sistemini destekleyen sürümlerde, gerekli onay sürümü artırıldığında ayrı bir güncelleme mesajı gösterilir. Yalnız bu siteyi değiştirmek, eski yayındaki sürümlerde kendiliğinden yeni pencere açmaz; uygulama güncellemesi gerekebilir. Bilgilendirme/koşul kabulünün sürümü ve zamanı cihazda saklanır; belirli bir işleme amacı için gerekebilecek rızadan ayrıdır.</p>
 
 <footer class="muted">© 2026 Gurun Studio · <a href="mailto:1omerfarukgurun@gmail.com">1omerfarukgurun@gmail.com</a></footer>
 </main>
