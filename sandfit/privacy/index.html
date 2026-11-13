@@ -14,7 +14,7 @@
 </header>
 
 <h1>Privacy Policy</h1>
-<p class="muted">Effective date: 2 November 2026 · Version 5</p>
+<p class="muted">Effective date: 13 November 2026 · Version 6</p>
 
 <p>This policy explains what information the mobile game <strong>Sand Fit: Block Puzzle</strong> (the “Game”) collects, why, who it is shared with, and the choices you have. The Game is published by <strong>Ömer Faruk Gürün</strong>, using the name <strong>Gurun Studio</strong> (Türkiye), referred to as “we”. Contact: <a href="mailto:1omerfarukgurun@gmail.com">1omerfarukgurun@gmail.com</a>.</p>
 
@@ -22,7 +22,7 @@
 <ul>
   <li>The Game has no sign-in screen. We do not ask for your name, email address, phone number, contacts, photos or precise location.</li>
   <li>Your progress, coins, boosters and purchases are stored on your device and backed up to a cloud save under a random, pseudonymous player ID. Restoration depends on the platform and available credentials and is not guaranteed. Settings stay on your device.</li>
-  <li>The Game shows ads through Google AdMob and uses Google Firebase for the cloud save, analytics and crash reports.</li>
+  <li>The Game shows ads through Google AdMob. Releases that include the AppLovin SDK can also use AppLovin as an additional ad source when it is configured in AdMob mediation. Including the SDK does not mean that AppLovin ads are enabled. Google Firebase provides cloud saves, analytics and crash reports.</li>
   <li>The Game uses the Meta SDK to measure our Instagram and Facebook ads. Its activation is controlled by the Google consent status. Older releases enable automatic app-event logging, which can include purchase events in addition to installs and launches.</li>
   <li>Purchases are processed by Google Play or the Apple App Store. We never see your payment details.</li>
 </ul>
@@ -36,6 +36,7 @@
   <tr><td><strong>Cloud save</strong>: a random pseudonymous player ID created by the Game, and under it your level, coins, boosters, owned items, claimed rewards, Game version and the time of the last save. On Android, if you use Google Play Games, your Play Games player ID and display name are linked to this ID.</td><td>Keep your progress and purchased coins if you reinstall the Game or change your phone.</td><td>Firebase Authentication, Cloud Firestore, Google Play Games Services (Android)</td></tr>
   <tr><td><strong>Crash and error reports</strong>: stack traces, device state at the time of the crash, installation identifier.</td><td>Find and fix crashes.</td><td>Firebase Crashlytics</td></tr>
   <tr><td><strong>Advertising data</strong>: advertising ID, IP address, device information, ad interactions, and your consent choice where required.</td><td>Show ads, measure them, prevent ad fraud; personalised ads only where you allowed them.</td><td>Google AdMob, Google User Messaging Platform</td></tr>
+  <tr><td><strong>AppLovin advertising SDK</strong>: device/app and network information, IP address, available advertising/vendor identifiers, ad interactions and privacy signals. Fields depend on permissions and platform settings. We do not provide a player email or phone number to AppLovin.</td><td>Provide and measure ads, prevent fraud and personalise where permitted.</td><td>AppLovin Corporation, when enabled through AdMob mediation in supported releases.</td></tr>
   <tr><td><strong>Meta app events</strong>: installation/activation and app launches, app and SDK version, device and operating-system information, SDK identifiers, IP address and advertising identifier where available and permitted. Older releases with automatic event logging enabled can also send purchase-related events. Our code requests activation when Google UMP reports that a privacy-options entry point is not required; that status is not a complete legal assessment of your region or consent.</td><td>Measure how many players our Instagram and Facebook ads bring.</td><td>Meta Platforms (Meta SDK)</td></tr>
   <tr><td><strong>Purchases</strong>: product, order/transaction ID and purchase receipt.</td><td>Deliver and restore purchases, prevent duplicate delivery, and provide purchase processing and transaction reporting. The Game has no separate developer-operated receipt-validation server.</td><td>Google Play Billing, Apple App Store, Unity In-App Purchasing</td></tr>
   <tr><td><strong>Unity purchase SDK data</strong>: product, price/currency, transaction identifiers, purchase attempts/results, receipts or store purchase payloads, installation/session and vendor identifiers, app/engine/SDK version, device model, language/region and operating system. Available fields depend on the platform, SDK configuration and permissions.</td><td>Operate purchasing, transaction reconciliation, diagnostics and Unity's SDK reporting under its applicable terms.</td><td>Unity Technologies (Unity IAP 5.4.3)</td></tr>
@@ -69,6 +70,7 @@
   <li><strong>Google LLC</strong> and its affiliates: Firebase (Authentication, Cloud Firestore, Analytics, Crashlytics, Remote Config), Google Play Games Services, AdMob and the User Messaging Platform, and Google Play Billing.</li>
   <li><strong>Apple Inc.</strong> (iOS only): App Store purchases.</li>
   <li><strong>Meta Platforms</strong>: advertising measurement and the SDK data described above.</li>
+  <li><strong>AppLovin Corporation</strong>: advertising and associated SDK data when enabled through AdMob mediation.</li>
   <li><strong>Unity Technologies</strong>: Unity IAP purchase processing, technical data and transaction reporting.</li>
   <li><strong>GitHub</strong>: hosting this website through GitHub Pages.</li>
 </ul>
@@ -79,13 +81,14 @@
   <li><a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a></li>
   <li><a href="https://www.apple.com/legal/privacy/" rel="noopener">Apple Privacy Policy</a></li>
   <li><a href="https://www.facebook.com/privacy/policy/" rel="noopener">Meta Privacy Policy</a> (app events and advertising measurement)</li>
+  <li><a href="https://legal.applovin.com/privacy/" rel="noopener">AppLovin Privacy Policy</a></li>
   <li><a href="https://unity.com/legal/game-player-and-app-user-privacy-policy" rel="noopener">Unity player privacy information</a> and <a href="https://unity.com/legal/iap-additional-terms" rel="noopener">Unity IAP terms</a></li>
   <li><a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener">GitHub Privacy Statement</a></li>
 </ul>
 <p>We may also disclose information if required by law or by a court or authority, or where needed to protect the rights and safety of our players or ourselves. If the Game is transferred to another publisher (for example in a sale or a publishing agreement), the data described here may be transferred with it; the new publisher must keep protecting it, and this policy will be updated to name them.</p>
 
 <h2>6. International transfers</h2>
-<p>Google, Meta, Unity, Apple and GitHub may process data in the United States, the European Economic Area and other countries. Applicable provider terms describe their processing locations and transfer mechanisms, which may include Standard Contractual Clauses or participation in a recognised data-protection framework. The applicable safeguard depends on the provider, the parties and your jurisdiction; use of an SDK is not by itself proof that all transfer requirements are satisfied. Contact us for information about the recipients and safeguards relevant to your request. Mandatory rights under the GDPR, UK law and Article 9 of the KVKK are not waived by using the Game or acknowledging this notice.</p>
+<p>Google, Meta, AppLovin, Unity, Apple and GitHub may process data in the United States, the European Economic Area and other countries. Applicable provider terms describe their processing locations and transfer mechanisms, which may include Standard Contractual Clauses or participation in a recognised data-protection framework. The applicable safeguard depends on the provider, the parties and your jurisdiction; use of an SDK is not by itself proof that all transfer requirements are satisfied. Contact us for information about the recipients and safeguards relevant to your request. Mandatory rights under the GDPR, UK law and Article 9 of the KVKK are not waived by using the Game or acknowledging this notice.</p>
 
 <h2>7. Retention</h2>
 <ul>

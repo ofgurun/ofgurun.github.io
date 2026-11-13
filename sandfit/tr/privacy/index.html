@@ -14,7 +14,7 @@
 </header>
 
 <h1>Gizlilik Politikası ve KVKK Aydınlatma Metni</h1>
-<p class="muted">Yürürlük tarihi: 2 Kasım 2026 · Sürüm 5</p>
+<p class="muted">Yürürlük tarihi: 13 Kasım 2026 · Sürüm 6</p>
 
 <p>Bu metin, <strong>Sand Fit: Block Puzzle</strong> mobil oyununun (“Oyun”) hangi bilgileri, neden topladığını, kimlerle paylaştığını ve sahip olduğunuz hakları açıklar. Oyunun yayıncısı ve veri sorumlusu <strong>Ömer Faruk Gürün</strong>’dür (<strong>Gurun Studio</strong> adıyla, Türkiye); metinde “biz” olarak geçer. İletişim: <a href="mailto:1omerfarukgurun@gmail.com">1omerfarukgurun@gmail.com</a>.</p>
 
@@ -22,7 +22,7 @@
 <ul>
   <li>Oyunda giriş ekranı yoktur. Adınızı, e-posta adresinizi, telefon numaranızı, rehberinizi, fotoğraflarınızı veya kesin konumunuzu istemeyiz.</li>
   <li>İlerlemeniz, coinleriniz, güçlendiricileriniz ve satın aldıklarınız cihazınızda saklanır; ayrıca rastgele, takma adlı bir oyuncu kimliği altında bulut kaydına yedeklenir. Geri yükleme platforma ve kullanılabilen kimlik bilgilerine bağlıdır, garanti edilmez. Ayarlar cihazınızda kalır.</li>
-  <li>Oyunda Google AdMob ile reklam gösterilir; bulut kaydı, analiz ve çökme raporları için Google Firebase kullanılır.</li>
+  <li>Oyunda Google AdMob ile reklam gösterilir. AppLovin SDK’sını içeren sürümler, AdMob aracılığında yapılandırıldığında AppLovin’i ek reklam kaynağı olarak da kullanabilir. SDK’nın pakette bulunması, AppLovin reklamlarının etkin olduğu anlamına gelmez. Bulut kaydı, analiz ve çökme raporları için Google Firebase kullanılır.</li>
   <li>Oyun, Instagram ve Facebook reklamlarımızı ölçmek için Meta SDK kullanır. Etkinleştirme Google’ın onay durumuna bağlıdır. Eski sürümlerde açılan otomatik uygulama olayı kaydı, kurulum ve açılışın yanında satın alma olaylarını da kapsayabilir.</li>
   <li>Satın almalar Google Play veya Apple App Store tarafından işlenir. Ödeme bilgilerinizi hiçbir zaman görmeyiz.</li>
 </ul>
@@ -36,6 +36,7 @@
   <tr><td><strong>Bulut kaydı</strong>: Oyunun oluşturduğu rastgele takma adlı oyuncu kimliği ve onun altında bölümünüz, coinleriniz, güçlendiricileriniz, sahip olduğunuz ürünler, alınan ödüller, Oyun sürümü ve son kayıt zamanı. Android’de Google Play Games kullanıyorsanız Play Games oyuncu kimliğiniz ve görünen adınız bu kimliğe bağlanır.</td><td>Oyunu yeniden kurduğunuzda veya telefon değiştirdiğinizde ilerlemenizi ve satın aldığınız coinleri korumak.</td><td>Firebase Authentication, Cloud Firestore, Google Play Games Hizmetleri (Android)</td></tr>
   <tr><td><strong>Çökme ve hata raporları</strong>: hata ayrıntıları, çökme anındaki cihaz durumu, kurulum kimliği.</td><td>Çökmeleri bulmak ve düzeltmek.</td><td>Firebase Crashlytics</td></tr>
   <tr><td><strong>Reklam verileri</strong>: reklam kimliği, IP adresi, cihaz bilgileri, reklam etkileşimleri ve gerekli yerlerde onay tercihiniz.</td><td>Reklam göstermek, ölçmek ve reklam sahtekârlığını önlemek; kişiselleştirilmiş reklam yalnızca izin verdiyseniz.</td><td>Google AdMob, Google User Messaging Platform</td></tr>
+  <tr><td><strong>AppLovin reklam SDK’sı</strong>: cihaz/uygulama ve ağ bilgileri, IP adresi, kullanılabilir reklam/sağlayıcı kimlikleri, reklam etkileşimleri ve gizlilik tercihleri. Alanlar izinlere ve platform ayarlarına bağlıdır. AppLovin’e oyuncu e-postası veya telefon numarası vermeyiz.</td><td>Reklam sunmak, ölçmek, sahtekârlığı önlemek ve izin verilen ölçüde kişiselleştirmek.</td><td>Destekleyen sürümlerde AdMob aracılığıyla etkinleştirildiğinde AppLovin Corporation.</td></tr>
   <tr><td><strong>Meta uygulama olayları</strong>: kurulum/etkinleştirme, uygulama açılışları, uygulama ve SDK sürümü, cihaz ve işletim sistemi bilgileri, SDK kimlikleri, IP adresi ve kullanılabildiği/izin verildiği ölçüde reklam kimliği. Otomatik kayıt açık olan eski sürümler satın alma olayları da gönderebilir. Kodumuz Google UMP, gizlilik tercihleri girişinin gerekli olmadığını bildirdiğinde etkinleştirme ister; bu durum tek başına bölgenizin veya rızanızın hukuki değerlendirmesi değildir.</td><td>Instagram ve Facebook reklamlarımızın kaç oyuncu getirdiğini ölçmek.</td><td>Meta Platforms (Meta SDK)</td></tr>
   <tr><td><strong>Satın almalar</strong>: ürün, sipariş/işlem numarası ve satın alma makbuzu.</td><td>Satın alınanı teslim ve geri yüklemek, aynı ödülün iki kez verilmesini önlemek, satın alma işlemlerini yürütmek ve raporlamak. Oyunun geliştirici tarafından işletilen ayrı bir makbuz doğrulama sunucusu yoktur.</td><td>Google Play Faturalandırma, Apple App Store, Unity In-App Purchasing</td></tr>
   <tr><td><strong>Unity satın alma SDK verileri</strong>: ürün, fiyat/para birimi, işlem kimlikleri, satın alma denemeleri/sonuçları, makbuz veya mağaza satın alma verisi, kurulum/oturum ve sağlayıcı kimlikleri, uygulama/motor/SDK sürümü, cihaz modeli, dil/bölge ve işletim sistemi. Alanlar platforma, SDK ayarlarına ve izinlere göre değişir.</td><td>Satın alma işlemleri, işlem mutabakatı, tanılama ve Unity’nin geçerli koşulları kapsamındaki SDK raporları.</td><td>Unity Technologies (Unity IAP 5.4.3)</td></tr>
@@ -69,6 +70,7 @@
   <li><strong>Google LLC</strong> ve bağlı şirketleri: Firebase (Authentication, Cloud Firestore, Analytics, Crashlytics, Remote Config), Google Play Games Hizmetleri, AdMob ve User Messaging Platform, Google Play Faturalandırma.</li>
   <li><strong>Apple Inc.</strong> (yalnızca iOS): App Store satın almaları.</li>
   <li><strong>Meta Platforms</strong>: reklam ölçümü ve yukarıda açıklanan SDK verileri.</li>
+  <li><strong>AppLovin Corporation</strong>: AdMob aracılığıyla etkinleştirildiğinde reklam ve ilgili SDK verileri.</li>
   <li><strong>Unity Technologies</strong>: Unity IAP satın alma işlemleri, teknik veriler ve işlem raporları.</li>
   <li><strong>GitHub</strong>: bu sitenin GitHub Pages ile barındırılması.</li>
 </ul>
@@ -79,13 +81,14 @@
   <li><a href="https://policies.google.com/privacy?hl=tr" rel="noopener">Google Gizlilik Politikası</a></li>
   <li><a href="https://www.apple.com/tr/legal/privacy/tr/" rel="noopener">Apple Gizlilik Politikası</a></li>
   <li><a href="https://www.facebook.com/privacy/policy/" rel="noopener">Meta Gizlilik Politikası</a> (uygulama olayları ve reklam ölçümü)</li>
+  <li><a href="https://legal.applovin.com/privacy/" rel="noopener">AppLovin Gizlilik Politikası</a></li>
   <li><a href="https://unity.com/legal/game-player-and-app-user-privacy-policy" rel="noopener">Unity oyuncu gizlilik bilgileri</a> ve <a href="https://unity.com/legal/iap-additional-terms" rel="noopener">Unity IAP koşulları</a></li>
   <li><a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener">GitHub Gizlilik Bildirimi</a></li>
 </ul>
 <p>Kanunen zorunlu olması, bir mahkeme veya yetkili makam tarafından istenmesi ya da oyuncularımızın veya bizim hak ve güvenliğimizi korumak için gerekli olması halinde bilgileri paylaşabiliriz. Oyunun başka bir yayıncıya devredilmesi (örneğin satış veya yayıncılık anlaşması) halinde burada anlatılan veriler de devredilebilir; yeni yayıncı verileri korumakla yükümlü olur ve bu metin onu belirtecek şekilde güncellenir.</p>
 
 <h2>6. Yurt dışına aktarım</h2>
-<p>Google, Meta, Unity, Apple ve GitHub verileri ABD, Avrupa Ekonomik Alanı ve diğer ülkelerde işleyebilir. Sağlayıcıların geçerli koşulları işleme yerlerini ve Standart Sözleşme Maddeleri veya tanınan veri koruma çerçevelerine katılım gibi aktarım mekanizmalarını açıklar. Uygulanacak güvence sağlayıcıya, taraflara ve ülkenize bağlıdır; bir SDK kullanmak tek başına bütün aktarım şartlarının sağlandığını kanıtlamaz. Talebinizle ilgili alıcı ve güvenceler hakkında bilgi için bize başvurabilirsiniz. Oyunu kullanmak veya bu metin hakkında bilgilendirilmek, KVKK md. 9, GDPR ve Birleşik Krallık hukuku kapsamındaki emredici haklarınızdan vazgeçmek değildir.</p>
+<p>Google, Meta, AppLovin, Unity, Apple ve GitHub verileri ABD, Avrupa Ekonomik Alanı ve diğer ülkelerde işleyebilir. Sağlayıcıların geçerli koşulları işleme yerlerini ve Standart Sözleşme Maddeleri veya tanınan veri koruma çerçevelerine katılım gibi aktarım mekanizmalarını açıklar. Uygulanacak güvence sağlayıcıya, taraflara ve ülkenize bağlıdır; bir SDK kullanmak tek başına bütün aktarım şartlarının sağlandığını kanıtlamaz. Talebinizle ilgili alıcı ve güvenceler hakkında bilgi için bize başvurabilirsiniz. Oyunu kullanmak veya bu metin hakkında bilgilendirilmek, KVKK md. 9, GDPR ve Birleşik Krallık hukuku kapsamındaki emredici haklarınızdan vazgeçmek değildir.</p>
 
 <h2>7. Saklama süreleri</h2>
 <ul>
