@@ -14,7 +14,7 @@
 </header>
 
 <h1>Privacy Policy</h1>
-<p class="muted">Effective date: 13 November 2026 · Version 6</p>
+<p class="muted">Effective date: 15 November 2026 · Version 7</p>
 
 <p>This policy explains what information the mobile game <strong>Sand Fit: Block Puzzle</strong> (the “Game”) collects, why, who it is shared with, and the choices you have. The Game is published by <strong>Ömer Faruk Gürün</strong>, using the name <strong>Gurun Studio</strong> (Türkiye), referred to as “we”. Contact: <a href="mailto:1omerfarukgurun@gmail.com">1omerfarukgurun@gmail.com</a>.</p>
 
@@ -22,7 +22,7 @@
 <ul>
   <li>The Game has no sign-in screen. We do not ask for your name, email address, phone number, contacts, photos or precise location.</li>
   <li>Your progress, coins, boosters and purchases are stored on your device and backed up to a cloud save under a random, pseudonymous player ID. Restoration depends on the platform and available credentials and is not guaranteed. Settings stay on your device.</li>
-  <li>The Game shows ads through Google AdMob. Releases that include the AppLovin SDK can also use AppLovin as an additional ad source when it is configured in AdMob mediation. Including the SDK does not mean that AppLovin ads are enabled. Google Firebase provides cloud saves, analytics and crash reports.</li>
+  <li>The Game shows ads through Google AdMob. Versions containing the Unity Ads SDK may also use Unity Ads through AdMob mediation when configured. Some earlier releases contain the AppLovin SDK; including a network SDK does not mean that its ads are enabled. Google Firebase provides cloud saves, analytics and crash reports.</li>
   <li>The Game uses the Meta SDK to measure our Instagram and Facebook ads. Its activation is controlled by the Google consent status. Older releases enable automatic app-event logging, which can include purchase events in addition to installs and launches.</li>
   <li>Purchases are processed by Google Play or the Apple App Store. We never see your payment details.</li>
 </ul>
@@ -36,6 +36,7 @@
   <tr><td><strong>Cloud save</strong>: a random pseudonymous player ID created by the Game, and under it your level, coins, boosters, owned items, claimed rewards, Game version and the time of the last save. On Android, if you use Google Play Games, your Play Games player ID and display name are linked to this ID.</td><td>Keep your progress and purchased coins if you reinstall the Game or change your phone.</td><td>Firebase Authentication, Cloud Firestore, Google Play Games Services (Android)</td></tr>
   <tr><td><strong>Crash and error reports</strong>: stack traces, device state at the time of the crash, installation identifier.</td><td>Find and fix crashes.</td><td>Firebase Crashlytics</td></tr>
   <tr><td><strong>Advertising data</strong>: advertising ID, IP address, device information, ad interactions, and your consent choice where required.</td><td>Show ads, measure them, prevent ad fraud; personalised ads only where you allowed them.</td><td>Google AdMob, Google User Messaging Platform</td></tr>
+  <tr><td><strong>Unity Ads SDK</strong>: device/app and network information, user/device identifiers, IP-derived approximate location, ad interactions, purchase-related information, SDK performance diagnostics and privacy choices; information you choose to submit when reporting an ad. Available fields depend on the platform, SDK settings and permissions.</td><td>Deliver and measure ads, operate and improve the SDK, handle ad reports, prevent fraud and personalise where permitted.</td><td>Unity Technologies, in supported releases using AdMob mediation.</td></tr>
   <tr><td><strong>AppLovin advertising SDK</strong>: device/app and network information, IP address, available advertising/vendor identifiers, ad interactions and privacy signals. Fields depend on permissions and platform settings. We do not provide a player email or phone number to AppLovin.</td><td>Provide and measure ads, prevent fraud and personalise where permitted.</td><td>AppLovin Corporation, when enabled through AdMob mediation in supported releases.</td></tr>
   <tr><td><strong>Meta app events</strong>: installation/activation and app launches, app and SDK version, device and operating-system information, SDK identifiers, IP address and advertising identifier where available and permitted. Older releases with automatic event logging enabled can also send purchase-related events. Our code requests activation when Google UMP reports that a privacy-options entry point is not required; that status is not a complete legal assessment of your region or consent.</td><td>Measure how many players our Instagram and Facebook ads bring.</td><td>Meta Platforms (Meta SDK)</td></tr>
   <tr><td><strong>Purchases</strong>: product, order/transaction ID and purchase receipt.</td><td>Deliver and restore purchases, prevent duplicate delivery, and provide purchase processing and transaction reporting. The Game has no separate developer-operated receipt-validation server.</td><td>Google Play Billing, Apple App Store, Unity In-App Purchasing</td></tr>
@@ -48,9 +49,9 @@
 
 <h2>3. Advertising, notifications and choices</h2>
 <p>If you are in the European Economic Area, the United Kingdom or Switzerland, the Game asks for your consent before personalised ads are shown, using Google’s consent form, which also lists Google’s advertising partners. If you do not consent, ads may be non-personalised, limited, or unavailable, depending on the consent state and Google's requirements. In versions that display “Ad privacy choices” in Settings, that button reopens Google's privacy-options form when required. Earlier versions do not include that button; device-level controls and the contact address remain available.</p>
-<p><strong>iOS:</strong> the Game asks for permission to track (App Tracking Transparency). Your device’s advertising identifier (IDFA) is used by AdMob and Meta only if you allow it. You can change this at any time in <strong>iOS Settings → Privacy &amp; Security → Tracking</strong>.</p>
+<p><strong>iOS:</strong> the Game asks for permission to track (App Tracking Transparency). AdMob, Meta and Unity Ads in supported versions may access your device’s advertising identifier (IDFA) only if you allow it. You can change this at any time in <strong>iOS Settings → Privacy &amp; Security → Tracking</strong>.</p>
 <p><strong>Android:</strong> you can reset or delete your advertising ID in your device settings (Settings → Privacy → Ads, or Google → Ads).</p>
-<p>Personalised ads involve automated profiling by Google based on the advertising data described above. We do not make any decisions about you that have legal or similarly significant effects. Buying <strong>Remove Ads</strong> removes the ads shown between levels; ads you choose to watch for rewards remain available.</p>
+<p>Personalised ads involve automated profiling by the advertising providers listed above based on the advertising data described above. We do not make any decisions about you that have legal or similarly significant effects. Buying <strong>Remove Ads</strong> removes the ads shown between levels; ads you choose to watch for rewards remain available.</p>
 
 <p><strong>Local reminders:</strong> with your device permission where required, the Game schedules notifications on the device. It stores recent play times, last-session time and permission-prompt history locally. It does not use Firebase Cloud Messaging or a remote push-token service. Notification permission/opening events, reward-calendar use, rescue results and thermal-state events may be included in Firebase Analytics. You can disable notifications in your device settings.</p>
 <p><strong>Reading is not consent:</strong> accepting the Terms or acknowledging this notice does not itself grant advertising, analytics or tracking consent. ATT concerns cross-app tracking; Google UMP concerns supported advertising privacy messages. Neither is a blanket consent for every SDK. Released versions currently have no separate in-game Firebase Analytics or Crashlytics opt-out; contact us about your rights and choices.</p>
@@ -71,7 +72,7 @@
   <li><strong>Apple Inc.</strong> (iOS only): App Store purchases.</li>
   <li><strong>Meta Platforms</strong>: advertising measurement and the SDK data described above.</li>
   <li><strong>AppLovin Corporation</strong>: advertising and associated SDK data when enabled through AdMob mediation.</li>
-  <li><strong>Unity Technologies</strong>: Unity IAP purchase processing, technical data and transaction reporting.</li>
+  <li><strong>Unity Technologies</strong>: Unity IAP purchase processing, technical data and transaction reporting; Unity Ads advertising and associated SDK data in supported releases.</li>
   <li><strong>GitHub</strong>: hosting this website through GitHub Pages.</li>
 </ul>
 <p>More information:</p>
