@@ -7900,3 +7900,18 @@ yieldmo.com, 3377199372461613093, RESELLER
 yieldmo.com, 3746143199094055132, RESELLER
 yieldmo.com, 2719019867620450718, RESELLER
 zetaglobal.net, 546, RESELLER
+
+# CAS Sand Fit Android/iOS additions reviewed 2026-11-25
+cas.ai, c8a14be2-b783-40db-b0e1-bbe17a653d02, DIRECT
+cas.ai, d5341886-0c08-4ecb-af81-d94499185ade, DIRECT
+inventorypartnerdomain=fasttvltd.com
+inventorypartnerdomain=mangomob.net
+inventorypartnerdomain=streamix-tv.com
+inventorypartnerdomain=voisetech.com
+inventorypartnerdomain=monetrix.ai
+inventorypartnerdomain=gadsme.com
+toponad.com,16aeaeeab92738,RESELLER,1d49fe424a1a456d
+antipodesdigital.com,ad0007,RESELLER
+adplify.ai,792996,RESELLER
+toponad.com,16aeaeeab92738,DIRECT,1d49fe424a1a456d
+media.net,8CU47UKG7,RESELLER
